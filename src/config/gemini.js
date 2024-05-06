@@ -40,6 +40,7 @@ async function runChat(prompt) {
     const result = await chat.sendMessage(prompt);
     const response = result.response;
     console.log(response.text());
+    return response.text();
 }
 
 // Export the runChat function to be used in other modules
