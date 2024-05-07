@@ -12,7 +12,9 @@ const ContextProvider = (props) => {
     const [loading,setloading]  = useState(false);
     const [resultData,setResultData] =useState("");
 
+   const delaypara =(index,nextword)=>{
 
+   }
 
     const onSent = async (prompt) => {
 
