@@ -74,7 +74,7 @@ const {onSent,recentPrompt,showResult,loading,resultData,setInput,input} =useCon
                   <div>
                     <img src={assets.gallery_icon} alt=""></img>
                     <img src={assets.mic_icon} alt=""></img>
-                    <img onClick={()=>onSent()} src={assets.send_icon} alt=""></img>
+                    {input? <img onClick={()=>onSent()} src={assets.send_icon} alt=""></img> : null }
                   </div>
                     
                 </div>
