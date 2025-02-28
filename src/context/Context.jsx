@@ -6,11 +6,11 @@ export const Context = createContext();
 const ContextProvider = (props) => {
 
     const[input,setInput] =useState("");
-    const [recentPrompt,setRecentPrompt] = useState("");
-    const [prevPrompts,setPrevPrompts] = useState([]);
-    const [showResult, setShowResult] = useState(false);
-    const [loading,setloading]  = useState(false);
-    const [resultData,setResultData] =useState("");
+    const [recentPrompt,setRecentPrompt] = useState("");  // to show prompt
+    const [prevPrompts,setPrevPrompts] = useState([]); //to save the prompt in sidebar
+    const [showResult, setShowResult] = useState(false); //for for display
+    const [loading,setloading]  = useState(false);   //loading animation
+    const [resultData,setResultData] =useState("");  //result on web 
 
    const delaypara =(index,nextword)=>{
              setTimeout(function(){
